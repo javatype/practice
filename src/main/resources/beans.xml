@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="com.bhagya.springboot.xml"/>
+
+    <bean
+            id="indexService"
+            class="com.bhagya.springboot.xml.IndexService"/>
+
+    <bean
+            id="indexApp"
+            class="com.bhagya.springboot.xml.IndexApp">
+        <property name="service" ref="indexService"/>
+    </bean>
+
+    <bean
+            id="indexApp1"
+            class="com.bhagya.springboot.xml.IndexApp1">
+        <constructor-arg ref="indexService"/>
+        <constructor-arg value="HelloStr"></constructor-arg>
+    </bean>
+</beans>

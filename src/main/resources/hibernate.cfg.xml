@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <mapping class="com.howtodoinjava.entity.EmployeeEntity"></mapping>
+    </session-factory>
+</hibernate-configuration>
+<!--<!DOCTYPE hibernate-configuration PUBLIC-->
+<!--        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"-->
+<!--        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">-->
+<!--<hibernate-configuration>-->
+<!--    <session-factory>-->
+<!--        &lt;!&ndash; JDBC Database connection settings &ndash;&gt;-->
+<!--        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>-->
+<!--        <property name="connection.url">jdbc:mysql://localhost:3306/sql_store?useSSL=false</property>-->
+<!--        <property name="connection.username">root</property>-->
+<!--        <property name="useSSL">false</property>-->
+<!--        <property name="connection.password">tukS@5757</property>-->
+<!--        &lt;!&ndash; JDBC connection pool settings ... using built-in test pool &ndash;&gt;-->
+<!--        <property name="connection.pool_size">1</property>-->
+<!--        &lt;!&ndash; Select our SQL dialect &ndash;&gt;-->
+<!--        <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>-->
+<!--        &lt;!&ndash; Echo the SQL to stdout &ndash;&gt;-->
+<!--        <property name="show_sql">true</property>-->
+<!--        &lt;!&ndash; Set the current session context &ndash;&gt;-->
+<!--        <property name="current_session_context_class">thread</property>-->
+<!--        &lt;!&ndash; Drop and re-create the database schema on startup &ndash;&gt;-->
+<!--        <property name="hbm2ddl.auto">create-drop</property>-->
+<!--        &lt;!&ndash; dbcp connection pool configuration &ndash;&gt;-->
+<!--        <property name="hibernate.dbcp.initialSize">5</property>-->
+<!--        <property name="hibernate.dbcp.maxTotal">20</property>-->
+<!--        <property name="hibernate.dbcp.maxIdle">10</property>-->
+<!--        <property name="hibernate.dbcp.minIdle">5</property>-->
+<!--        <property name="hibernate.dbcp.maxWaitMillis">-1</property>-->
+<!--        <mapping class="com.bhagya.springboot.hibernate.Student" />-->
+<!--    </session-factory>-->
+<!--</hibernate-configuration>-->
