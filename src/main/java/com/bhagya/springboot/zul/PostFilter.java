@@ -22,7 +22,6 @@ public class PostFilter extends ZuulFilter {
     @Override
     public Object run() {
         System.out.println("Inside Response Filter");
-
         return null;
     }
 }

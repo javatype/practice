@@ -10,7 +10,8 @@ import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 public class Application {
 
     public static void main(String[] args) {
-        System.out.println("add some");
+       // System.out.println("add some");
+        System.setProperty("somePro", "initial");
         SpringApplication.run(Application.class, args);
     }
 

@@ -165,8 +165,26 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
 	<build>
-		<sourceDirectory>src/main/java</sourceDirectory>
-		<finalName>Spring3HibernateIntegration</finalName>
+		<plugins>
+	<plugin>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-maven-plugin</artifactId>
+		<executions>
+			<execution>
+				<goals>
+					<goal>repackage</goal>
+				</goals>
+				<configuration>
+					<classifier>spring-boot</classifier>
+					<mainClass>
+						com.bhagya.springboot.Application
+					</mainClass>
+				</configuration>
+			</execution>
+		</executions>
+	</plugin>
+		</plugins>
 	</build>
 </project>
