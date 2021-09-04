@@ -2,7 +2,7 @@
 <configuration>
     <include resource="org/springframework/boot/logging/logback/default.xml"/>
     <include resource="org/springframework/boot/logging/logback/console-appender.xml" />
-    <property name="LOGS" value="D://jars" />
+    <property name="LOGS" value="/home/tukaram/logs" />
     <appender name="CONSOLE"
               class="ch.qos.logback.core.ConsoleAppender">
         <layout class="ch.qos.logback.classic.PatternLayout">
