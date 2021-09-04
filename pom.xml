@@ -14,7 +14,7 @@
 	<name>spring-boot</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>15</java.version>
+		<java.version>11</java.version>
 		<ignite.version>2.10.0</ignite.version>
 		<spring-cloud.version>Hoxton.SR9</spring-cloud.version>
 	</properties>
